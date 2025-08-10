@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1313" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./public/apple-touch-icon.png">
+
+  <title id="title">HalalBeats</title>
+
+  <!-- Import CSS File -->
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/responsive.css">
+
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body onload="preLoader()">
+
+  <div id="loading"></div>
+
+  <!-- Go to Up button -->
+  <button onclick="topFunction()" id="moveTopBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+  <!-- Navbar  -->
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">HalalBeats</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#play">Play Naat</a></li>
+        <li><a href="#songs">Choose Naat</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="banner"></div>
+
+  <!-- PLAY PAGE -->
+  <section class="play" id="play">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="left-col">
+              <h1 id="songName"> Lam Yaati Nazeer</h1>
+              <h5>~<em id="songBy">Owais Raza</em></h5>
+            </div>
+            <div class="right-col">
+              <img src="./assets/Image/play.png" alt="play-button" id="icon">
+              <p>Click Here To Listen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio id="song">
+        <source src="./assets/Songs/Lam-Yati-Nazeer (1).mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </section>
+
+  <!-- SELECT SONGS -->
+  <section class="songs" id="songs">
+    <div class="container">
+      <div class="songs-header">
+        <h2 class="title">Choose a Naat !!</h2>
+        <a class="play-song-btn" href="#play">Play Naat</a>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn"> Ya Nabi Salam Allayka</button>
+        <button type="button" class="btn">Mera Dil Badal De</button>
+        <button type="button" class="btn">Naatein Sarkar Ki Parhta Hun Main</button>
+        <button type="button" class="btn">Jaga Ji Laganai Ki Dunya Anahi Hai</button>
+        <button type="button" class="btn">Ali Mola Ali Dam Dam</button>
+        <button type="button" class="btn">Sue Muntaha Wo Chale Nabi</button>
+        <button type="button" class="btn">Aagae Pyare Nabi</button>
+        <button type="button" class="btn">Nabi Ka Lab Par</button>
+        <button type="button" class="btn">Zamin Meli Nahin Hoti</button>
+        <button type="button" class="btn">Tu Kuja Mann Kuj</button>
+        <button type="button" class="btn"> Durood e Pak</button>
+        <button type="button" class="btn">Qasida Burda Sharif</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-header">
+        <h2 class="title">About Naat !!</h2>
+      </div>
+      <div class="about-content">
+        <div>
+          <p id="aboutSong">
+           "Lam Yati Nazeero Kafi Nazarin" is a popular naat (a form of Islamic poetry that praises the Prophet Muhammad) written by Imam Ahmad Raza Khan Barelvi. The phrase translates to "None like you has ever been seen" or "Your like has not been seen". It is a part of the larger poem "Hadaiq e Bakhshish". The naat is widely recited and is known for its beautiful language and expressions of love for the Prophet. 
+            The poem emphasizes the unique and unparalleled qualities of the Prophet Muhammad, highlighting his significance in Islam and the deep affection that Muslims hold for him. The naat is often recited during religious gatherings, especially in the context of praising the Prophet and expressing devotion to him.
+
+          </p>
+          <a class="download-song" href="./assets/Songs/Lam-Yati-Nazeer (1).mp3" id="download" download="Naat.mp3">
+            Download Naat
+          </a>
+        </div>
+        <div class="image-container">
+          <img src="./assets/Image/Lam.png" alt="song-banner" id="banner">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="title">Connect with me on Social media</h2>
+    <div class="social-media">
+      <a href="https://www.instagram.com/mansoob.e.zehra/" target="_blank"><i class="fab fa-instagram"></i></a>
+
+      <a href="https://x.com/MansoobeZahra" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a href="https://x.com/MansoobeZahra" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+      <a href="https://twitter.com/blah.blah.blah" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a href="https://github.com/MansoobeZahra" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer class="footer">
+      <p>© Made by <a href="https://github.com/MansoobeZahra" target="_blank">Mansoob-e-Zahra</a></p>
+    </footer>
+  </section>
+
+  <!-- Import JS File -->
+  <script src="./JS/script.js"></script>
+  <script src="./RegisterServiceWorker.js"></script>
+
+</body>
+
+</html>
